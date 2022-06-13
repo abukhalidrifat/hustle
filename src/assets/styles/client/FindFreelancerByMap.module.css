@@ -1,0 +1,56 @@
+.breadcrumb {
+  color: #003986;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 34px;
+  margin-bottom: 15px;
+}
+.freelancers {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.allFreelancers {
+  display: flex;
+  align-items: center;
+}
+.allFreelancers p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #ff1102;
+}
+.allFreelancers svg {
+  height: 30px;
+}
+.availableFreelancer {
+  display: flex;
+  align-items: center;
+}
+.availableFreelancer p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #FFE901;
+}
+.availableFreelancer svg {
+  height: 30px;
+}
+.map{
+    display: flex;
+}
+.map img{
+    margin: auto;
+}
+.question{
+    color: #003986;
+    font-size: 24px;
+    font-weight: 500;
+}
+.select{
+    border: 1px solid #003986;
+    font-size: 20px;
+    padding: 9px;
+    font-weight: 600;
+    color: #003986;
+    margin-top: 10px;
+    border-radius: 9px;
+}

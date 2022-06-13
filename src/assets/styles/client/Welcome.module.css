@@ -1,0 +1,31 @@
+.postButton {
+  border: none;
+  width: 196px;
+  background-color: #003986;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  cursor: pointer;
+}
+.postButton p {
+  font-size: 23px;
+  color: white;
+  font-weight: 600;
+}
+.headingTitle {
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffe901;
+}
+.headingPara {
+  font-size: 20px;
+  width: 60%;
+  margin-top:12px;
+  margin-bottom: 15px;
+  text-align: justify;
+}

@@ -1,0 +1,48 @@
+.options{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f7f4f4;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 4px 5px 5px 0px #c9c5c5;
+    margin-bottom: 20px;
+}
+.horizontalLine{
+    background-color: #003986;
+    height: 30px;
+    padding: 1px;
+}
+.select {
+    width: 100px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #003986;
+    background-color: #f7f4f4;
+  }
+  .input {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: #003986;
+    width: 150px;
+    background-color: #f7f4f4;
+  }
+  .input::placeholder{
+      color: #003986;
+  }
+  .button {
+    height: 50px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #003986;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  .button svg {
+    margin-right: 10px;
+  }

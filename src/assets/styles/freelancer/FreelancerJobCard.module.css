@@ -1,0 +1,74 @@
+.card{
+    width: 300px;
+    background-color: #f8f5f5;
+    padding: 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 4px 5px 5px 0px #c9c5c5;
+    margin-bottom: 25px;
+}
+.title{
+    font-size: 18px;
+    font-weight: 500;
+    color: #003986;
+}
+.subTitle{
+    color: #003986;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 5px;
+}
+.location{
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFE901;
+    margin-top: 5px;
+}
+.cardParagraph{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+}
+.budgetAndExperience{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.budget p:first-child,.experience p:first-child{
+    font-size: 24px;
+    color: #FFE901;
+    font-weight: 500;
+}
+.budget p:last-child,.experience p:last-child{
+    font-size: 20px;
+    color: #003986;
+    font-weight: 500;
+    margin-left: 10px;
+}
+.viewDetails{
+    font-size: 20px;
+    color: #003986;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.detailsBtn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.applyBtn{
+    background-color: #003986;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}

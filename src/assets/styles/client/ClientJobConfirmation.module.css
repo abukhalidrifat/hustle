@@ -1,0 +1,109 @@
+.heading {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.title {
+  color: #003986;
+  font-size: 26px;
+  font-weight: 600;
+}
+.type {
+  color: #003986;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  margin-left: 10px;
+}
+.location {
+  color: #ffe901;
+  font-size: 20px;
+  font-weight: 500;
+}
+.information p {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: justify;
+}
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.details div p:first-child {
+  color: #ffe901;
+  font-size: 20px;
+  font-weight: 500;
+}
+.details div p:last-child {
+  color: #003986;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 10px;
+  background-color: #ffffff;
+  padding: 6px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  text-align: center;
+}
+.skills {
+  font-size: 20px;
+  color: #003986;
+  font-weight: 500;
+}
+.skills div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skills div p {
+  background-color: #ffffff;
+  padding: 7px;
+  font-size: 18px;
+  margin-right: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.requirementsHead {
+  color: #003986;
+  font-size: 20px;
+  font-weight: 500;
+}
+.requirements div {
+  display: flex;
+  text-align: justify;
+}
+.requirements div p {
+  font-size: 18px;
+  font-weight: 400;
+}
+.confirmBtn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.confirmBtn button{
+    width: 150px;
+    background-color: #003986;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}

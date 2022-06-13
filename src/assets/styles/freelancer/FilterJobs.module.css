@@ -1,0 +1,68 @@
+.title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffe901;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.type,
+.duration,
+.budget,
+.experience {
+  font-size: 20px;
+  color: #003986;
+  font-weight: 500;
+}
+.container {
+  width: 150px;
+  padding: 14px;
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  position: fixed;
+  z-index: 7;
+  top: 45px;
+  right: 25px;
+}
+.button {
+  margin-top: 10px;
+  background-color: #003986;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.horizontalLine {
+  margin-top: 10px;
+  border-bottom: 1px solid grey;
+}
+.wrapper {
+  width: 100%;
+  position: fixed;
+  height: 100vh;
+  background-color: black;
+  top: 0;
+  right: 0;
+  opacity: 0.2;
+  z-index: 5;
+}
+.cross {
+  font-weight: 800;
+  font-size: 16px;
+  border: 3px solid #003986;
+  background-color: #ffffff;
+  color: #003986;
+  padding: 3px;
+  border-radius: 20px;
+  position: absolute;
+  right: 9px;
+}
