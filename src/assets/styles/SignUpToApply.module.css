@@ -1,0 +1,73 @@
+.exploreTalentsBannerTitle {
+  font-size: 26px;
+  font-weight: 500;
+  color: #003986;
+}
+.exploreTalentsBannerSubTitle {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.exploreTalentsBannerList {
+  color: #003986;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.exploreTalentsBannerButton {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px;
+  color: #fff;
+  background-color: #003986;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.exploreTalentsBannerLeft {
+  width: 50%;
+}
+.exploreTalentsBannerRight img {
+  width: 370px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+.exploreTalentsBanner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: #ebebeb;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+@media only screen and (max-width: 796px) {
+  .exploreTalentsBannerLeft {
+    width: 100%;
+  }
+  .exploreTalentsBannerRight {
+    margin: auto;
+    margin-top: 20px;
+  }
+  .exploreTalentsBannerRight img {
+    width: 300px;
+  }
+  .exploreTalentsBannerButton{
+    display: block;
+    margin: auto;
+  }
+}

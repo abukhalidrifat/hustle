@@ -188,11 +188,17 @@ function FreelancerProfile() {
             <p>{state.introduction}</p>
           )}
         </div>
-        <div className={css.workHistory} style={{ marginTop:'10px',marginBottom:'10px' }}>
+        <div
+          className={css.workHistory}
+          style={{ marginTop: "10px", marginBottom: "10px" }}
+        >
           <p className={css.title}>Work History</p>
           <p>{state.workHistory} jobs completed</p>
         </div>
-        <div className={css.skills} style={{ marginTop:'10px',marginBottom:'10px' }}>
+        <div
+          className={css.skills}
+          style={{ marginTop: "10px", marginBottom: "10px" }}
+        >
           <p className={css.title}>Skills</p>
           <div className={css.skillDetails}>
             <p>web dev</p>
@@ -227,13 +233,7 @@ function FreelancerProfile() {
           </div>
         </div>
         <p className={css.title}>Reviews (20 reviews)</p>
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "space-evenly",
-          }}
-        >
+        <div className="cardsLayout">
           <ReviewCard image={profileAvatarImg} />
           <ReviewCard image={profileAvatarImg} />
           <ReviewCard image={profileAvatarImg} />

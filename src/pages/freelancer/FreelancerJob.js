@@ -3,7 +3,7 @@ import css from "../../assets/styles/freelancer/FreelancerJob.module.css";
 import FreelancerActiveJob from "../../components/freelancer/FreelancerActiveJob";
 import FreelancerInterviewJob from "../../components/freelancer/FreelancerInterviewJob";
 import FreelancerSubmittedJob from "../../components/freelancer/FreelancerSubmittedJob";
-import JobCard from "../../components/JobCard";
+
 
 function Freelancerjob() {
   const [activeTab, setJobTo] = useState("activeJobs");
@@ -20,7 +20,7 @@ function Freelancerjob() {
           }`}
           onClick={() => handleActiveTab("activeJobs")}
         >
-          Active Jobs
+          Active <br /> Jobs
         </p>
         <p
           className={`${css.interviewJob} ${
@@ -31,7 +31,7 @@ function Freelancerjob() {
           Interviewing
         </p>
         <p
-          className={`${css.runningJob} ${
+          className={`${css.submittedJob} ${
             activeTab == "submitted" ? css.jobRecentTabActive : ""
           }`}
           onClick={() => handleActiveTab("submitted")}

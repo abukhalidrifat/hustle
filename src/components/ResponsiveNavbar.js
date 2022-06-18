@@ -1,12 +1,22 @@
-import css from "../assets/styles/Navbar.module.css";
-import bellIcon from "../assets/icons/bell.png";
-import avatar from "../assets/icons/profilepic.jpg";
 import React, { useState } from "react";
 import { NavLink, useParams, useNavigate } from "react-router-dom";
+import css from "../assets/styles/ResponsiveNavbar.module.css";
+import bellIcon from "../assets/icons/bell.png";
+import avatar from "../assets/icons/profilepic.jpg";
 
-function Navbar({ switchProfile, handleSwitchProfile, isAuth, switchAuth }) {
+function ResponsiveNavbar({
+  isAuth,
+  switchProfile,
+  switchAuth,
+  handleSwitchProfile,
+}) {
+  let [showNav, setShowNav] = useState(false);
   let { id } = useParams();
   let navigate = useNavigate();
+
+  const handleNavBanner = () => {
+    setShowNav((prev) => !prev);
+  };
   const navigateMeTo = (link) => {
     navigate(link);
   };
@@ -29,7 +39,7 @@ function Navbar({ switchProfile, handleSwitchProfile, isAuth, switchAuth }) {
         X
       </div>
       <div style={{ display: "flex" }}>
-        <img src={avatar} className={css.avatar} alt="avatar" />
+        <img src={avatar} className={css.avatarImg} alt="avatar" />
         <div style={{ marginTop: "4px" }}>
           <p className={css.profileName}>Your Name</p>
           <p className={css.profileTitle}>Your Title</p>
@@ -128,10 +138,66 @@ function Navbar({ switchProfile, handleSwitchProfile, isAuth, switchAuth }) {
     </div>
   );
 
-  let clientNavLinks = (
+  let AuthNavbar = (
     <ul>
       <NavLink
-        to="/home"
+        onClick={handleNavBanner}
+        to="/"
+        className={({ isActive }) =>
+          [css.navlink, isActive ? css.authActive : null]
+            .filter(Boolean)
+            .join(" ")
+        }
+      >
+        Home
+      </NavLink>
+      <NavLink
+        onClick={handleNavBanner}
+        to="/explore/jobs"
+        className={({ isActive }) =>
+          [css.navlink, isActive ? css.authActive : null]
+            .filter(Boolean)
+            .join(" ")
+        }
+      >
+        Explore Jobs
+      </NavLink>
+      <NavLink
+        onClick={handleNavBanner}
+        to="/explore/talents"
+        className={({ isActive }) =>
+          [css.navlink, isActive ? css.authActive : null]
+            .filter(Boolean)
+            .join(" ")
+        }
+      >
+        Explore Talents
+      </NavLink>
+      <div
+        style={{
+          display: "flex",
+          marginRight: "30px",
+          marginTop: "25px",
+        }}
+      >
+        <button
+          className={css.loginBtn}
+          onClick={() => {
+            switchAuth();
+            handleNavBanner();
+          }}
+        >
+          Log In
+        </button>
+        <button className={css.signupBtn}>SignUp</button>
+      </div>
+    </ul>
+  );
+  let clientNavbar = (
+    <ul>
+      <NavLink
+        onClick={handleNavBanner}
+        to="/"
         className={({ isActive }) =>
           [css.navlink, isActive ? css.activelink : null]
             .filter(Boolean)
@@ -141,6 +207,7 @@ function Navbar({ switchProfile, handleSwitchProfile, isAuth, switchAuth }) {
         Home
       </NavLink>
       <NavLink
+        onClick={handleNavBanner}
         to="/explore/talents"
         className={({ isActive }) =>
           [css.navlink, isActive ? css.activelink : null]
@@ -151,6 +218,7 @@ function Navbar({ switchProfile, handleSwitchProfile, isAuth, switchAuth }) {
         Explore Talents
       </NavLink>
       <NavLink
+        onClick={handleNavBanner}
         to="/earnings"
         className={({ isActive }) =>
           [css.navlink, isActive ? css.activelink : null]
@@ -158,9 +226,10 @@ function Navbar({ switchProfile, handleSwitchProfile, isAuth, switchAuth }) {
             .join(" ")
         }
       >
-        Your Payment
+        Earnings
       </NavLink>
       <NavLink
+        onClick={handleNavBanner}
         to="/inbox"
         className={({ isActive }) =>
           [css.navlink, isActive ? css.activelink : null]
@@ -172,9 +241,10 @@ function Navbar({ switchProfile, handleSwitchProfile, isAuth, switchAuth }) {
       </NavLink>
     </ul>
   );
-  let freelancerNavLinks = (
+  let freelancerNavbar = (
     <ul>
       <NavLink
+        onClick={handleNavBanner}
         to="/freelancer/explore/jobs"
         className={({ isActive }) =>
           [css.navlink, isActive ? css.activelink : null]
@@ -185,6 +255,7 @@ function Navbar({ switchProfile, handleSwitchProfile, isAuth, switchAuth }) {
         Explore Works
       </NavLink>
       <NavLink
+        onClick={handleNavBanner}
         to="/freelancer/jobs"
         className={({ isActive }) =>
           [css.navlink, isActive ? css.activelink : null]
@@ -195,6 +266,7 @@ function Navbar({ switchProfile, handleSwitchProfile, isAuth, switchAuth }) {
         Your Jobs
       </NavLink>
       <NavLink
+        onClick={handleNavBanner}
         to="/freelancer/earnings"
         className={({ isActive }) =>
           [css.navlink, isActive ? css.activelink : null]
@@ -205,6 +277,7 @@ function Navbar({ switchProfile, handleSwitchProfile, isAuth, switchAuth }) {
         Earnings
       </NavLink>
       <NavLink
+        onClick={handleNavBanner}
         to="/inbox"
         className={({ isActive }) =>
           [css.navlink, isActive ? css.activelink : null]
@@ -216,68 +289,23 @@ function Navbar({ switchProfile, handleSwitchProfile, isAuth, switchAuth }) {
       </NavLink>
     </ul>
   );
-  let AuthNavbar = (
-    <React.Fragment>
+  let NavBanner = (
+    <div className={css.navWrapper}>
+      <button className={css.cross} onClick={handleNavBanner}>
+        X
+      </button>
       <div className={css.links}>
-        <ul>
-          <div style={{ display: "flex" }}>
-            <NavLink
-              to="/"
-              className={({ isActive }) =>
-                [css.navlink, isActive ? css.authActive : null]
-                  .filter(Boolean)
-                  .join(" ")
-              }
-            >
-              Home
-            </NavLink>
-            <NavLink
-              to="/explore/jobs"
-              className={({ isActive }) =>
-                [css.navlink, isActive ? css.authActive : null]
-                  .filter(Boolean)
-                  .join(" ")
-              }
-            >
-              Explore Jobs
-            </NavLink>
-            <NavLink
-              to="/explore/talents"
-              className={({ isActive }) =>
-                [css.navlink, isActive ? css.authActive : null]
-                  .filter(Boolean)
-                  .join(" ")
-              }
-            >
-              Explore Talents
-            </NavLink>
-            <NavLink
-              to="/aboutus"
-              className={({ isActive }) =>
-                [css.navlink, isActive ? css.authActive : null]
-                  .filter(Boolean)
-                  .join(" ")
-              }
-            >
-              About Us
-            </NavLink>
-          </div>
-        </ul>
+        {isAuth
+          ? switchProfile
+            ? clientNavbar
+            : freelancerNavbar
+          : AuthNavbar}
       </div>
-      <div>
-        <button className={css.loginBtn} onClick={switchAuth}>
-          Log In
-        </button>
-        <button className={css.signupBtn}>SignUp</button>
-      </div>
-    </React.Fragment>
+    </div>
   );
-  let loggedInNavbar = (
+  let profile = (
     <React.Fragment>
-      <div className={css.links}>
-        {switchProfile ? clientNavLinks : freelancerNavLinks}
-      </div>
-      <div className="icons">
+      <div className={css.icons}>
         <img src={bellIcon} className={css.bellIcon} alt="notiication" />
         <img
           src={avatar}
@@ -289,19 +317,31 @@ function Navbar({ switchProfile, handleSwitchProfile, isAuth, switchAuth }) {
       {showProfile && myProfile}
     </React.Fragment>
   );
-
   return (
-    <header className="mainNav" style={{ padding: "0px 30px 0px 30px" }}>
+    <header className="responsiveNav" style={{ padding: "0px 30px 0px 30px" }}>
+      {showNav ? NavBanner : null}
       <div className={css.navbar}>
         <div className={css.logo}>
           <h2>
             Hustle<p style={{ display: "inline" }}>.</p>
           </h2>
         </div>
-        {isAuth ? loggedInNavbar : AuthNavbar}
+        <div style={{ display: "flex" }}>
+          {isAuth ? profile : null}
+          <div
+            style={{ transform: "rotate(180deg)" }}
+            onClick={handleNavBanner}
+          >
+            <svg viewBox="0 0 100 80" width="40" height="40" fill="#003986">
+              <rect y="10" width="60" height="15"></rect>
+              <rect y="35" width="80" height="15"></rect>
+              <rect y="60" width="100" height="15"></rect>
+            </svg>
+          </div>
+        </div>
       </div>
     </header>
   );
 }
 
-export default Navbar;
+export default ResponsiveNavbar;

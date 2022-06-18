@@ -43,7 +43,7 @@ function FindFreelancerByMap() {
       <div className={css.map}>
         <img src={map} alt="map" />
       </div>
-      <div style={{ padding:'30px' }}>
+      <div style={{ padding: "30px" }}>
         <p className={css.question}>
           What type of freelancers you are looking for?
         </p>
@@ -52,17 +52,11 @@ function FindFreelancerByMap() {
           <option value="Web dev">Graphics</option>
         </select>
       </div>
-      <div style={{ marginTop:'20px',padding:'30px' }}>
+      <div style={{ marginTop: "20px", padding: "30px" }}>
         <p style={{ color: "#003986", fontSize: "20px", fontWeight: "500" }}>
-         Available Freelancers &gt;
+          Available Freelancers &gt;
         </p>
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "space-between",
-          }}
-        >
+        <div className="cardsLayout">
           <FreelancerCard />
           <FreelancerCard />
           <FreelancerCard />

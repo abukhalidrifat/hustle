@@ -1,0 +1,189 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.logo h2 {
+  color: #003986;
+}
+.logo p {
+  color: #ffe901;
+}
+.navWrapper {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  right: 0px;
+  background-color: white;
+  overflow: hidden;
+  z-index: 9;
+}
+.links ul {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.navlink {
+  display: block;
+  text-decoration: none;
+  margin-right: 30px;
+  font-size: 18px;
+  color: #2b2b2bcc;
+  font-weight: 700;
+}
+.loginBtn {
+  width: max-content;
+  font-size: 18px;
+  font-weight: 500;
+  color: #003986;
+  border: 2px solid #003986;
+  background-color: #ffffff;
+  padding: 8px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.signupBtn {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  border: 2px solid #003986;
+  outline: #003986;
+  background-color: #003986;
+  padding: 8px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-top: 10px;
+}
+.authActive {
+  border-bottom: 2px solid #ffe901;
+}
+.cross {
+  padding: 5px;
+  background-color: #f53636;
+  outline: #f53636;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  font-size: 16px;
+  font-weight: 700;
+  position: absolute;
+  right: 8px;
+  top: 7px;
+  color: #fff;
+}
+.activelink {
+  color: #003986 !important;
+}
+.profile {
+  position: absolute;
+  background-color: #003986;
+  right: 40px;
+  top: 80px;
+  width: 250px;
+  border-radius: 10px;
+  padding: 10px;
+  z-index: 9;
+}
+.profileName {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+.profileTitle {
+  color: #ffe901;
+  font-size: 18px;
+  font-weight: 400;
+}
+.profileOptions {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.profileOptions p {
+  margin-left: 10px;
+}
+.switchMode {
+  display: flex;
+  justify-content: center;
+}
+.switchMode button {
+  width: 160px;
+  padding: 10px;
+  color: #003986;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 7px;
+}
+.mode {
+  background-color: #ffffff;
+  color: #003986;
+  padding: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  border: 2px solid #003986;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.bellIcon {
+  width: 20px;
+  height: 25px;
+  margin-right: 5px;
+}
+.icons {
+  margin-right: 15px;
+  margin-top: 10px;
+}
+.avatar {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  transform: translateY(5px);
+  background-size: cover;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.avatarImg {
+  width:70px;
+  height:70px;
+  margin-right: 10px;
+  background-size: cover;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  transform: translateY(8px);
+  -webkit-transform: translateY(8px);
+  -moz-transform: translateY(8px);
+  -ms-transform: translateY(8px);
+  -o-transform: translateY(8px);
+}

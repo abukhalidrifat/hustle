@@ -4,25 +4,37 @@ import instagramImg from "../assets/icons/instagram.png";
 import twitterImg from "../assets/icons/twitter.png";
 import { useNavigate } from "react-router-dom";
 
-function Footer() {
+function Footer({ switchProfile, isAuth }) {
   let navigate = useNavigate();
   const navigateMeTo = (link) => {
     navigate(link);
   };
   let clientFooterNavs = (
     <ul>
-      <li onClick={()=>navigateMeTo('/home')}>Home</li>
-      <li onClick={()=>navigateMeTo('/explore/talents')}>Explore talents</li>
-      <li onClick={()=>navigateMeTo('/earnings')}>Your Earnings</li>
-      <li onClick={()=>navigateMeTo('/aboutus')}>About Us</li>
+      <li onClick={() => navigateMeTo("/home")}>Home</li>
+      <li onClick={() => navigateMeTo("/explore/talents")}>Explore talents</li>
+      <li onClick={() => navigateMeTo("/earnings")}>Your Earnings</li>
+      <li onClick={() => navigateMeTo("/aboutus")}>About Us</li>
     </ul>
   );
   let freelancerFooterNavs = (
     <ul>
-      <li onClick={()=>navigateMeTo('/explore/jobs')}>Explore Jobs</li>
-      <li onClick={()=>navigateMeTo('/freelancer/jobs')}>Your Jobs</li>
-      <li onClick={()=>navigateMeTo('/freelancer/earnings')}>Your Earnings</li>
-      <li onClick={()=>navigateMeTo('/aboutus')}>About Us</li>
+      <li onClick={() => navigateMeTo("/freelancer/explore/jobs")}>
+        Explore Jobs
+      </li>
+      <li onClick={() => navigateMeTo("/freelancer/jobs")}>Your Jobs</li>
+      <li onClick={() => navigateMeTo("/freelancer/earnings")}>
+        Your Earnings
+      </li>
+      <li onClick={() => navigateMeTo("/aboutus")}>About Us</li>
+    </ul>
+  );
+  let authLinks = (
+    <ul>
+      <li onClick={() => navigateMeTo("/")}>Home</li>
+      <li onClick={() => navigateMeTo("/explore/jobs")}>Explore Jobs</li>
+      <li onClick={() => navigateMeTo("/explore/talents")}>Explore Talents</li>
+      <li onClick={() => navigateMeTo("/aboutus")}>About us</li>
     </ul>
   );
   return (
@@ -43,9 +55,11 @@ function Footer() {
         </svg>
       </div>
       <div className={css.links}>
-        {
-          clientFooterNavs
-        }
+        {isAuth
+          ? switchProfile
+            ? clientFooterNavs
+            : freelancerFooterNavs
+          : authLinks}
       </div>
       <div className={css.social}>
         <img src={facebookImg} alt="social" />

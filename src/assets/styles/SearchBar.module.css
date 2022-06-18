@@ -29,6 +29,7 @@
     color: #003986;
     width: 150px;
     background-color: #f7f4f4;
+    margin-bottom: 10px;
   }
   .input::placeholder{
       color: #003986;
@@ -45,4 +46,9 @@
   }
   .button svg {
     margin-right: 10px;
+  }
+  @media only screen and (max-width: 512px) {
+    .horizontalLine{
+      display: none;
+    }
   }

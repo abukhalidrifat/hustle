@@ -1,26 +1,28 @@
 import css from "../assets/styles/RecentAndActiveJobTab.module.css";
 
-function RecentAndActiveJobTab({onTabChange,activeTab}) {
+function RecentAndActiveJobTab({ onTabChange, activeTab, tab1, tab2 }) {
   const handleActiveTab = (job) => {
-    onTabChange(job)
+    onTabChange(job);
   };
   return (
     <div className={css.jobHeading}>
       <p
-        className={`${css.activeJob} ${
-          activeTab == "activeJobs" ? css.jobActiveTabActive : ""
-        }`}
+        className={css.activeJob}
         onClick={() => handleActiveTab("activeJobs")}
       >
-        Active Jobs (3)
+        {tab1 ? tab1 : "Active Jobs"}
+        <div
+          className={activeTab == "activeJobs" ? css.jobActiveTabActive : ""}
+        ></div>
       </p>
       <p
-        className={`${css.runningJob} ${
-          activeTab == "runningJobs" ? css.jobRecentTabActive : ""
-        }`}
+        className={css.runningJob}
         onClick={() => handleActiveTab("runningJobs")}
       >
-        Running Jobs
+        {tab2 ? tab2 : "Recent Jobs"}
+        <div
+          className={activeTab == "runningJobs" ? css.jobRecentTabActive : ""}
+        ></div>
       </p>
     </div>
   );

@@ -1,0 +1,14 @@
+.headTitle {
+    font-size: 28px;
+    font-weight: 600;
+    color: #003986;
+    text-align: center;
+}
+.headTitle span{
+    color: #ffe901;
+}
+.headSubTitle{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}

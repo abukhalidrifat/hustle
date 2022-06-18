@@ -192,13 +192,7 @@ function ClientProfile() {
           <p>{state.workHistory} jobs completed</p>
         </div>
         <p className={css.title}>Reviews (20 reviews)</p>
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "space-evenly",
-          }}
-        >
+        <div className="cardsLayout">
           <ReviewCard image={profileAvatarImg} />
           <ReviewCard image={profileAvatarImg} />
           <ReviewCard image={profileAvatarImg} />

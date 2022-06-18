@@ -94,14 +94,7 @@ function FreelancerExploreJobs() {
         </div>
       </div>
       {filterTab && <FilterJobs cancelFilter={handleFilterTab} />}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-evenly",
-          flexWrap: "wrap",
-          marginTop: "15px",
-        }}
-      >
+      <div className="cardsLayout">
         <FreelancerJobCard />
         <FreelancerJobCard />
         <FreelancerJobCard />

@@ -1,0 +1,79 @@
+.different {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .different p:first-child {
+    font-size: 28px;
+    font-weight: 600;
+    color: #ffe901;
+    text-align: center;
+  }
+  .different p:first-child div{
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+  .different p:first-child div p {
+      font-size: 28px;
+      font-weight: 600;
+    color: #003986 !important;
+    padding: 0.5rem 2rem;
+    width: -moz-fit-content;
+    width: fit-content;
+    border: 2px solid #ffe901;
+    background: rgba(255, 233, 1, 0.2);
+    display: block;
+    margin: auto;
+    margin-top: 4px;
+    position: relative;
+  }
+  .different p:first-child div span {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      background-color: #ffe901;
+  }
+  .different p:last-child {
+    width: 50%;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .whyDifferentCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .differentCard {
+    width: 220px;
+    box-shadow: 5px 6px 5px 0px #c9c5c5;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  .differentCardHead img {
+    width: 200px;
+    display: block;
+    margin: auto;
+  }
+  .differentCardTitle {
+    color: #003986;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .differentCardSubTitle {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+  }

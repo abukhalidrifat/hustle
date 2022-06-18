@@ -1,33 +1,44 @@
 .jobHeading {
   display: flex;
   justify-content: space-between;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
-  border-bottom: 5px solid #2b2b2b1a;
+  border-bottom: 6px solid #2b2b2b1a;
   color: #2b2b2bcc;
 }
 .activeJob {
-  margin-left: 40px;
+  text-align: center;
+  margin-left: 70px;
 }
 .runningJob {
-  margin-right: 40px;
+  text-align: center;
+  margin-right: 70px;
 }
 .jobActiveTabActive {
   position: relative;
   border-bottom: 6px solid #003986;
-  left: -38px;
   bottom: -7px;
-  line-height: 23px;
   width: 210px;
-  text-align: center;
 }
 .jobRecentTabActive {
   position: relative;
   border-bottom: 6px solid #003986;
   bottom: -7px;
-  line-height: 13px;
   width: 210px;
-  text-align: center;
-  margin-right: 0 !important;
+}
+
+@media only screen and (max-width: 796px) {
+  .activeJob  {
+    margin-left: 40px;
+  }
+  .runningJob  {
+    margin-right: 40px;
+  }
+  .jobActiveTabActive{
+    width: 120px;
+  }
+  .jobRecentTabActive{
+    width: 100px;
+  }
 }
 

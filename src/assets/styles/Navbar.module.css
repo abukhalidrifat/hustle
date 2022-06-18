@@ -30,6 +30,7 @@
 .links ul {
   list-style-type: none;
   display: flex;
+  align-items: center;
 }
 .navlink {
   display: block;
@@ -74,11 +75,11 @@
 .profileOptions p {
   margin-left: 10px;
 }
-.switchMode{
+.switchMode {
   display: flex;
   justify-content: center;
 }
-.switchMode button{
+.switchMode button {
   width: 160px;
   padding: 10px;
   color: #003986;
@@ -86,7 +87,7 @@
   font-weight: 500;
   border-radius: 7px;
 }
-.mode{
+.mode {
   background-color: #ffffff;
   color: #003986;
   padding: 4px;
@@ -98,4 +99,53 @@
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+}
+.loginBtn {
+  font-size: 18px;
+  font-weight: 500;
+  color: #003986;
+  border: 2px solid #003986;
+  background-color: #ffffff;
+  padding: 8px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.signupBtn {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  border: 2px solid #003986;
+  outline: #003986;
+  background-color: #003986;
+  padding: 8px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-top: 10px;
+}
+.authActive{
+  border-bottom: 2px solid #ffe901;
+}
+.cross {
+  padding: 5px;
+  background-color: #f53636;
+  outline: #f53636;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  font-size: 16px;
+  font-weight: 700;
+  position: absolute;
+  right: 8px;
+  top: 7px;
+  color: #fff;
 }

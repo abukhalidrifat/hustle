@@ -101,13 +101,7 @@ function VisitFreelancerProfile() {
           </div>
         </div>
         <p className={css.title}>Reviews (20 reviews)</p>
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "space-evenly",
-          }}
-        >
+        <div className="cardsLayout">
           <ReviewCard image={profileAvatarImg} />
           <ReviewCard image={profileAvatarImg} />
           <ReviewCard image={profileAvatarImg} />
@@ -116,25 +110,19 @@ function VisitFreelancerProfile() {
         </div>
       </div>
       <p className={css.title}>You may also like&gt;</p>
-      <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "space-between",
-          }}
-        >
-          <FreelancerCard />
-          <FreelancerCard />
-          <FreelancerCard />
-          <FreelancerCard />
-          <FreelancerCard />
-          <FreelancerCard />
-          <FreelancerCard />
-          <FreelancerCard />
-          <FreelancerCard />
-          <FreelancerCard />
-          <FreelancerCard />
-        </div>
+      <div className="cardsLayout">
+        <FreelancerCard />
+        <FreelancerCard />
+        <FreelancerCard />
+        <FreelancerCard />
+        <FreelancerCard />
+        <FreelancerCard />
+        <FreelancerCard />
+        <FreelancerCard />
+        <FreelancerCard />
+        <FreelancerCard />
+        <FreelancerCard />
+      </div>
     </div>
   );
 }

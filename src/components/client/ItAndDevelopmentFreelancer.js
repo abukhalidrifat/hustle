@@ -6,7 +6,7 @@ function ItAndDevelopmentFreelancer() {
       <p style={{ color: "#003986", fontSize: "20px", fontWeight: "500" }}>
         It and Development &gt;
       </p>
-      <div style={{ display: 'flex',flexWrap:'wrap',justifyContent:'space-between' }}>
+      <div className="cardsLayout">
         <FreelancerCard />
         <FreelancerCard />
         <FreelancerCard />

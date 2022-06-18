@@ -2,9 +2,33 @@
   margin: 0;
 	border: 0;
   cursor: pointer;
+  box-sizing: border-box;
 }
 body{
   width: 100%;
   height: auto;
   background-color: #ffffff;
+}
+.cardsLayout{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.responsiveNav{
+  display: none;
+}
+@media only screen and (max-width: 560px) {
+.cardsLayout{
+  justify-content: center;
+}
+}
+@media only screen and (max-width: 860px) {
+ .mainNav{
+   display: none !important;
+ }
+ .responsiveNav{
+   display: block !important;
+ }
 }

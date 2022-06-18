@@ -1,43 +1,45 @@
-.yourJob{
-    font-size: 28px;
-    color: #FFE901;
-    font-weight: 600;
-    margin-left: 30px;
+.yourJob {
+  font-size: 28px;
+  color: #ffe901;
+  font-weight: 600;
+  margin-left: 30px;
 }
 .jobHeading {
-    display: flex;
-    justify-content: space-between;
-    font-size: 20px;
-    font-weight: 600;
-    border-bottom: 5px solid #2b2b2b1a;
-    color: #2b2b2bcc;
-    width: 90%;
-    margin: auto;
-  }
-  .jobActiveTabActive {
-    position: relative;
-    border-bottom: 6px solid #003986;
-    left: -38px;
-    bottom: -6px;
-    line-height: 23px;
-    width: 150px;
-    text-align: center;
-  }
-  .jobRecentTabActive {
-    position: relative;
-    border-bottom: 6px solid #003986;
-    bottom: -6px;
-    line-height: 13px;
-    width: 150px;
-    text-align: center;
-    margin-right: 0 !important;
-  }
-  .jobInterviewTabActive {
-    position: relative;
-    border-bottom: 6px solid #003986;
-    bottom: -6px;
-    line-height: 13px;
-    width: 150px;
-    text-align: center;
-    margin-right: 0 !important;
-  }
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom: 5px solid #2b2b2b1a;
+  color: #2b2b2bcc;
+  width: 90%;
+  margin: auto;
+}
+.jobActiveTabActive {
+  position: relative;
+  border-bottom: 6px solid #003986;
+  bottom: -6px;
+  width: 70px;
+  text-align: center;
+  color: #003986;
+}
+.jobRecentTabActive {
+  position: relative;
+  border-bottom: 6px solid #003986;
+  bottom: -6px !important;
+  color: #003986;
+  width: 130px;
+  text-align: center;
+}
+.jobInterviewTabActive {
+  position: relative;
+  border-bottom: 6px solid #003986;
+  bottom: -6px !important;
+  color: #003986;
+  width: 130px;
+  text-align: center;
+  margin-right: 0 !important;
+}
+.interviewJob,.submittedJob{
+  position: relative;
+  bottom: -20px;
+}
