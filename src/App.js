@@ -1,7 +1,7 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Home from "./pages/client/Home";
 import Footer from "./components/Footer";
 import PostAJob from "./pages/client/PostAJob";
@@ -30,29 +30,6 @@ function App() {
     setAuth((prev) => !prev);
   };
 
-  // const hasWindow = typeof window !== "undefined";
-
-  // function getWindowDimensions() {
-  //   const width = hasWindow ? window.innerWidth : null;
-  //   const height = hasWindow ? window.innerHeight : null;
-  //   return {
-  //     width,
-  //     height,
-  //   };
-  // }
-
-  // const [windowDimensions, setWindowDimensions] = useState(
-  //   getWindowDimensions()
-  // );
-  // useEffect(() => {
-  //   if (hasWindow) {
-  //     function handleResize() {
-  //       setWindowDimensions(getWindowDimensions());
-  //     }
-  //     window.addEventListener("resize", handleResize);
-  //     return () => window.removeEventListener("resize", handleResize);
-  //   }
-  // }, [hasWindow]);
   return (
     <div className="App">
       <Navbar

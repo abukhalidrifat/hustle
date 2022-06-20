@@ -83,6 +83,10 @@
   font-weight: 500;
   text-align: justify;
 }
+.workHistory{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 .workHistory p:last-child {
   font-size: 18px;
   color: #2b2b2bcc;
@@ -92,6 +96,7 @@
 .skillDetails {
   display: flex;
   flex-wrap: wrap;
+  margin: 15px 0;
 }
 .skillDetails p {
   background-color: #f2f2f2;
@@ -121,6 +126,7 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin: 15px 0 ;
 }
 .portfolioTable {
   margin-bottom: 25px;
@@ -130,3 +136,11 @@
   color: #003986;
   font-weight: 600;
 }
+
+@media only screen and (max-width: 610px) {
+  .profileButtons{
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  }
